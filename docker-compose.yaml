@@ -35,13 +35,13 @@ services:
     depends_on:
       - kafka
 
-  client:
-    build:
-      context: ./client
-      dockerfile: Dockerfile
-    ports:
-      - "4173:4173"
-    environment:
-      NODE_ENV: production
-    networks:
-      - my_network
+  # client:
+  #   build:
+  #     context: ./client
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "4173:4173"
+  #   environment:
+  #     NODE_ENV: production
+  #   networks:
+  #     - my_network
