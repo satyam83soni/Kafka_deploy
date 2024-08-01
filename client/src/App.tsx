@@ -37,6 +37,15 @@ const App = () => {
           >
             Stream Numbers
           </Button>
+          <Button
+            className="px-2 py-1 rounded-lg mb-4"
+            onClick={() => {
+              handleSubmit(Number(times));
+              setTimes("");
+            }}
+          >
+            Stream Numbers
+          </Button>
           <Button onClick={() => {handleStop()}}>Stop</Button>
         </div>
       </div>
