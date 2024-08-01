@@ -31,7 +31,7 @@ services:
       - /usr/src/app/node_modules
     environment:
       NODE_ENV: development
-      KAFKA_BROKER: PLAINTEXT://kafka:9092
+      KAFKA_BROKER: localhost://kafka:9092
     depends_on:
       - kafka
 
@@ -45,3 +45,6 @@ services:
   #     NODE_ENV: production
   #   networks:
   #     - my_network
+
+
+
